@@ -6,6 +6,7 @@ from random import sample
 
 text = """ Un analista de seguridad con sede en España demostró nuevas trampas de captura de satélites 
 que podrían permitir navegar de forma anónima con Internet de alta velocidad """
+
 words = nltk.word_tokenize(text)
 
 print(words)
