@@ -4,8 +4,8 @@ nltk.download()
 from nltk import word_tokenize, sent_tokenize
 from random import sample
 
-text = """ Un analista de seguridad con sede en España demostró nuevas trampas de captura de satélites 
-que podrían permitir navegar de forma anónima con Internet de alta velocidad """
+text = """ La capacidad de escuchar es un don y crece a medida que crecemos espiritualmente. La vida adquiere un nuevo significado cuando nos abrimos a ese don
+  """
 
 words = nltk.word_tokenize(text)
 
@@ -13,4 +13,9 @@ print(words)
 tamano=len(words)
 
 print(tamano)
-print (sample(words, k=tamano))
+wordscambi=(sample(words, k=tamano))
+
+for i in range(len(wordscambi)):
+    print(wordscambi[i], end=" ")
+
+
